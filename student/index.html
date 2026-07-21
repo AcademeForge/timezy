@@ -734,7 +734,7 @@ function showAuthMsg(type,text){const b=$('alMsg');b.className='al-msg '+type;b.
 function clearAuthMsg(){const b=$('alMsg');if(b){b.className='al-msg';b.textContent='';}}
 
 function enterGate(){document.body.classList.add('gate-active');showAuthView('welcome');}
-function enterHome(){window.location.href='game.html';}
+function enterHome(){window.location.href='index.html';}
 
 /* FALLBACKS */
 function awHeroFb(){return'<div class="aw-hero-fb"><span>🎓</span><p>AcademeForge</p></div>';}
@@ -951,7 +951,7 @@ document.addEventListener('visibilitychange',()=>{
 function init(){
   hideSplash();
   if(afIsLoggedIn()){
-    window.location.href = 'game.html';
+    window.location.href = 'index.html';
   }else{
     enterGate();
   }
